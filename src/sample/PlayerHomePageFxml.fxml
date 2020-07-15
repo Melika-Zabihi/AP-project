@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseEntered="#writePlayerInfo" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayerHomePageController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@../blue-wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="174.0" prefHeight="500.0" prefWidth="523.0">
+         <children>
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="192.0" layoutY="182.0" prefHeight="25.0" prefWidth="155.0" textFill="#080014">
+               <font>
+                  <Font name="Nyala" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="99.0" fitWidth="105.0" layoutX="218.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../login-icon-388005-free-icons-library-login-png-512_512.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="136.0" layoutY="256.0" text="Vs Computer" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="257.0" text="Vs Players" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="306.0" text="Won:" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="359.0" text="Lost:" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="418.0" text="Tie:" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutY="43.0" opacity="0.15" prefHeight="186.0" prefWidth="529.0" style="-fx-background-color: white;" />
+            <Button layoutX="495.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#WindowButton" style="-fx-background-color: #0d6b82; -fx-background-radius: 80;" text="X" textFill="WHITE" />
+            <Label fx:id="wonLabel1" layoutX="196.0" layoutY="302.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="wonLabel2" layoutX="374.0" layoutY="302.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="lostLabel1" layoutX="196.0" layoutY="357.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="lostLabel2" layoutX="374.0" layoutY="357.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="tieLabel1" layoutX="195.0" layoutY="414.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="tieLabel2" layoutX="374.0" layoutY="412.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Nyala" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" style="-fx-background-color: #0d6b82; -fx-background-radius: 80;" text="&lt;&lt;" textFill="WHITE" />
+      <Label alignment="CENTER" layoutY="40.0" prefHeight="41.0" prefWidth="175.0" text="CONTACTS" textFill="WHITE">
+         <font>
+            <Font name="Nyala" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="6.0" layoutY="78.0" prefHeight="25.0" prefWidth="132.0" style="-fx-background-radius: 10;" />
+      <Button layoutX="138.0" layoutY="78.0" mnemonicParsing="false" onMouseClicked="#onClicked" style="-fx-background-radius: 10;" text="Add" />
+      <VBox fx:id="buttonList" layoutX="4.0" layoutY="109.0" prefHeight="386.0" prefWidth="167.0" />
+   </children>
+</AnchorPane>
