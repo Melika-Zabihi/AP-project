@@ -81,17 +81,17 @@
       </Label>
       <Label layoutX="469.0" layoutY="200.0" prefHeight="56.0" prefWidth="64.0" text="Won:" textFill="WHITE">
          <font>
-            <Font name="Angsana New" size="40.0" />
+            <Font name="Angsana New" size="25.0" />
          </font>
       </Label>
       <Label layoutX="472.0" layoutY="252.0" prefHeight="56.0" prefWidth="64.0" text="Lost:" textFill="WHITE">
          <font>
-            <Font name="Angsana New" size="40.0" />
+            <Font name="Angsana New" size="25.0" />
          </font>
       </Label>
       <Label layoutX="482.0" layoutY="306.0" prefHeight="56.0" prefWidth="64.0" text="Tie:" textFill="WHITE">
          <font>
-            <Font name="Angsana New" size="40.0" />
+            <Font name="Angsana New" size="25.0" />
          </font>
       </Label>
       <Label layoutX="135.0" layoutY="80.0" text="Vs Computer" textFill="#eaf0f8">
